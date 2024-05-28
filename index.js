@@ -47,19 +47,26 @@ function validaradmin(objLoginSenha){
     }
 }
 
+// Função para listagem das mensagens adquiridas 
 function listarMensagens() {
-    var mensagens = obterMensagens();
 
+    // Variavel que tem como resultado a função do arquivo funcoes.js 
+    var mensagens = obterMensagens();
+    
+    // Imprime as mensagens adquiridas no console do navegador 
     console.log(mensagens);
 
+    // Variavel da tabela, tendo como resultado a tabela vazia criada no mensagens.html
     var tabela = document.getElementById("tabela-mensagens"); 
 
+    // Adicionando linhas a tabela vazia 
     var thead = "<thead>"+
     "<th>Nome</th>"+
     "<th>Email</th>"+
     "<th>Mensagem</th>"+
     "</thead>" 
 
+// Adicionando o resultado as linhas vazias, criada na tabela  
 var tbody = '<tbody>';
 mensagens.forEach(function (loop) {
     tbody += "<tr>"+
@@ -71,5 +78,6 @@ mensagens.forEach(function (loop) {
 
 tbody += '</tbody>'
 
+// Inserindo resultados 
 document.getElementById("tabela").innerHTML = thead + tbody 
 }
