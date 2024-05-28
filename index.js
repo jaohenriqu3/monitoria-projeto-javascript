@@ -37,6 +37,8 @@ function validaradmin(objLoginSenha){
     var resultadoLogin = validarUsuario(objLoginSenha);
 
     // Logica da validação 
+    // Se o resultado login for verdadeiro, consiga o acesso a mensagens.html 
+    // Senão insira um alerta de erro 
     if (resultadoLogin == true) {
         location.href="Mensagens.html"
     }
