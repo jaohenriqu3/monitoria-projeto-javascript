@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mensagens </title>
+    <link href="CSS/Style.css" rel="stylesheet"/> 
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="barco" src="imagens/barco1.png" />
+            <div class="txtop">
+                <h1>Luxo</h1>
+                <h2>Aluguel de iates</h2>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a class="menu" href="Projeto iate.html" >PÁGINA INICIAL</a> </li>
+                <li class="barra"> | </li>
+                <li><a class="menu" href="Aluguel.html" >ALUGUEL DE IATES</a></li>
+                <li class="barra"> | </li>
+                <li><a class="menu" href="Destinos.html" >DESTINOS</a></li>
+                <li class="barra"> | </li>
+                <li><a class="menu" href="admin.html" >ADMIN</a></li>
+                <li class="barra"> | </li>
+                <li><a class="menu" href="Contato.html" >CONTATO</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <h2> Página do admnistrador </H1> <br>
+    
+        <div style="padding: 5px;">
+            <p>Clique aqui para listar as mensagem.</p>
+            <button onclick="listarMensagens()">Listar</button>
+        </div>
+
+        <div>
+            <table id="tabela" class="tabela">
+                
+            </table>
+        </div>
+     
+    <button onclick="ListarMensagens2()"> </button>
+    <script src=" jquery-3.6.4.min.js"> </script>
+    <script src="funcoes.js"> </script>
+	<script src="index.js"> </script>
+</body>
+</html>
